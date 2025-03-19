@@ -8,11 +8,11 @@ rust-version = "1.83"
 
 [target.'cfg(not(target_os = "espidf"))'.dependencies]
 #sysinfo = "0.30.12"
-micro-rdk =  {version = "0.4.1-rc10", git = "https://github.com/viamrobotics/micro-rdk.git", features = ["esp32"]}
+micro-rdk =  {version = "0.4.1-rc10", rev = "v0.4.1-rc10", git = "https://github.com/viamrobotics/micro-rdk.git", features = ["esp32"]}
 rand = "0.8.5"
 [target.'cfg(target_os = "espidf")'.dependencies]
 #sysinfo = "0.30.12"
-micro-rdk = {version = "0.4.1-rc10", git = "https://github.com/viamrobotics/micro-rdk.git", features = ["esp32"] }
+micro-rdk = {version = "0.4.1-rc10", rev = "v0.4.1-rc10", git = "https://github.com/viamrobotics/micro-rdk.git", features = ["esp32"] }
 
 [dependencies]
 log = "0.4"
